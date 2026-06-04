@@ -15,9 +15,9 @@ Este projeto é um SGBD didático chave-valor implementado em Java para a discip
 ```
 src/
 ├── SGBD.java           — Interface que define as operações do banco chave-valor (inserir, buscar, remover, listar)
-├── TipoOperacao.java   — Enum com os tipos de operação registrados no log (INSERT, UPDATE, DELETE)
+├── TipoOperacao.java   — Enum com os tipos de operação registrados no log (PUT e DEL)
 ├── RegistroLog.java    — Representa uma entrada no arquivo de log append-only
-├── LogAppendOnly.java  — Implementa o banco chave-valor com persistência em disco via log sequencial
+├── LogAppendOnly.java  — Implementa a camada de persistência em disco via log sequencial append-only
 ├── Grafo.java          — Grafo direcionado com lista de adjacência e BFS para calcular o menor caminho
 ├── Rastreio.java       — Integra o banco de dados e o grafo para registrar e rastrear encomendas
 └── DemoGrupo04.java    — Classe principal com a demonstração completa do sistema em duas sessões
@@ -40,6 +40,6 @@ O programa roda em duas sessões:
 
 ## Estruturas de Dados Utilizadas
 
-- **HashMap** - índice primário em memória que mapeia cada chave ao seu valor mais recente, garantindo acesso O(1).
-- **TreeMap** - mantém as chaves em ordem alfabética para listagem ordenada do banco.
+- **HashMap** — índice primário em memória que mapeia cada código de rastreio ao seu valor mais recente, garantindo acesso O(1).
+- **TreeMap** — mantém as chaves em ordem alfabética para listagem ordenada do banco.
 - **Grafo direcionado com lista de adjacência** — modela a malha logística entre os centros de distribuição; usa **BFS** para encontrar o caminho mais curto (menor número de saltos) entre dois centros.
