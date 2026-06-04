@@ -40,6 +40,6 @@ O programa roda em duas sessões:
 
 ## Estruturas de Dados Utilizadas
 
-- **HashMap** — índice primário em memória que mapeia cada chave ao seu valor mais recente, garantindo acesso O(1).
-- **TreeMap** — mantém as chaves em ordem alfabética para listagem ordenada do banco.
+- **HashMap** - índice primário em memória que mapeia cada chave ao seu valor mais recente, garantindo acesso O(1).
+- **TreeMap** - mantém as chaves em ordem alfabética para listagem ordenada do banco.
 - **Grafo direcionado com lista de adjacência** — modela a malha logística entre os centros de distribuição; usa **BFS** para encontrar o caminho mais curto (menor número de saltos) entre dois centros.
