@@ -34,6 +34,7 @@ java -cp out DemoGrupo04
 
 O programa roda em duas sessões:
 
+
 **Sessão 1:** configura o grafo com os centros de distribuição e as rotas entre eles, cadastra as encomendas no banco e chama `rastrearRota` para encontrar o caminho mais curto entre a origem e o destino de cada encomenda usando BFS.
 
 **Sessão 2:** reabre o banco a partir do log gravado em disco e prova que todo o estado foi recuperado corretamente, sem perda de dados, demonstrando a persistência do sistema.
